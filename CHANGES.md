@@ -1,3 +1,51 @@
+## Version 11.10.0 (Next Release)
+
+Core Grammars:
+
+- fix(cpp) not all kinds of number literals are highlighted correctly [Lê Duy Quang][]
+- fix(css) fix overly greedy pseudo class matching [Bradley Mackey][]
+- enh(arcade) updated to ArcGIS Arcade version 1.24 [Kristian Ekenes][]
+- fix(typescript): params types [Mohamed Ali][]
+- fix(rust) fix escaped double quotes in string  [Mohamed Ali][]
+- fix(yaml) fix for yaml with keys having brackets highlighted incorrectly [Aneesh Kulkarni][]
+- fix(bash) fix # within token being detected as the start of a comment [Felix Uhl][]
+- fix(python) fix `or` conflicts with string highlighting [Mohamed Ali][]
+- enh(delphi) allow digits to be omitted for hex and binary literals [Jonah Jeleniewski][]
+- enh(delphi) add support for digit separators [Jonah Jeleniewski][]
+- enh(delphi) add support for character strings with non-decimal numerics [Jonah Jeleniewski][]
+- fix(javascript) incorrect function name highlighting [CY Fung][]
+- fix(1c) fix escaped symbols "+-;():=,[]" literals [Vitaly Barilko][]
+
+New Grammars:
+
+- added 3rd party CODEOWNERS grammar to SUPPORTED_LANGUAGES [nataliia-radina][]
+- added 3rd party Luau grammar to SUPPORTED_LANGUAGES [Robloxian Demo][]
+- added 3rd party ReScript grammar to SUPPORTED_LANGUAGES [Paul Tsnobiladzé][]
+
+Developer Tool:
+
+- enh(tools): order CSS options picklist [David Schach][]
+- enh(tools): remove duplicate CSS options [David Schach][]
+
+Themes:
+
+- Added `1c-light` theme a like in the IDE 1C:Enterprise 8 (for 1c) [Vitaly Barilko][]
+
+[Lê Duy Quang]: https://github.com/leduyquang753
+[Mohamed Ali]: https://github.com/MohamedAli00949
+[Bradley Mackey]: https://github.com/bradleymackey
+[Kristian Ekenes]: https://github.com/ekenes
+[Aneesh Kulkarni]: https://github.com/aneesh98
+[Bruno Meneguele]: https://github.com/bmeneg
+[Felix Uhl]: https://github.com/iFreilicht
+[nataliia-radina]: https://github.com/Nataliia-Radina
+[Robloxian Demo]: https://github.com/RobloxianDemo
+[Paul Tsnobiladzé]: https://github.com/tsnobip
+[Jonah Jeleniewski]: https://github.com/cirras
+[CY Fung]: https://github.com/cyfung1031
+[Vitaly Barilko]: https://github.com/Diversus23
+
+
 ## Version 11.9.0
 
 CAVEATS / POTENTIALLY BREAKING CHANGES
