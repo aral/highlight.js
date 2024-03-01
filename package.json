@@ -1,6 +1,6 @@
 {
-  "name": "highlight.js",
-  "description": "Syntax highlighting with language autodetection.",
+  "name": "@aral/highlight.js",
+  "description": "TEMPORARY FORK - DO NOT USE. Syntax highlighting with language autodetection.",
   "keywords": [
     "highlight",
     "syntax"
