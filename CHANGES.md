@@ -6,6 +6,8 @@ CAVEATS / POTENTIALLY BREAKING CHANGES
 
 Core Grammars:
 
+- enh(gml) updated to latest language version (GML v2024.2) [gnysek][]
+- enh(c) added more C23 keywords and preprcoessor directives [Eisenwave][]
 - enh(js/ts) support namespaced tagged template strings [Aral Balkan][]
 - enh(perl) fix false-positive variable match at end of string [Josh Goebel][]
 - fix(cpp) not all kinds of number literals are highlighted correctly [Lê Duy Quang][]
@@ -16,8 +18,10 @@ Core Grammars:
 - fix(rust) fix for r# raw identifier not being highlighted correctly. [JaeBaek Lee][]
 - enh(rust) Adding union to be recognized as a keyword in Rust. [JaeBaek Lee][]
 - fix(yaml) fix for yaml with keys having brackets highlighted incorrectly [Aneesh Kulkarni][]
+- fix(csharp) add raw string highlighting for C# 11. [Tara][]
 - fix(bash) fix # within token being detected as the start of a comment [Felix Uhl][]
 - fix(python) fix `or` conflicts with string highlighting [Mohamed Ali][]
+- enh(python) adds a scope to the `self` variable [Lee Falin][]
 - enh(delphi) allow digits to be omitted for hex and binary literals [Jonah Jeleniewski][]
 - enh(delphi) add support for digit separators [Jonah Jeleniewski][]
 - enh(delphi) add support for character strings with non-decimal numerics [Jonah Jeleniewski][]
@@ -29,9 +33,11 @@ Core Grammars:
 - fix(types) fix interface LanguageDetail > keywords [Patrick Chiu]
 - enh(java) add `goto` to be recognized as a keyword in Java [Alvin Joy][]
 - enh(bash) add keyword `sudo` [Alvin Joy][]
+- fix(haxe) captures `new` keyword without capturing it within variables/class names [Cameron Taylor][]
 - fix(go) fix go number literals to accept `_` separators, add hex p exponents [Lisa Ugray][]
 - enh(markdown) add entity support [David Schach][] [TaraLei][]
 - enh(css) add `justify-items` and `justify-self` attributes [Vasily Polovnyov][]
+- enh(css) add `accent-color`, `appearance`, `color-scheme`, `rotate`, `scale` and `translate` attributes [Carl Räfting][]
 
 New Grammars:
 
@@ -40,6 +46,7 @@ New Grammars:
 - added 3rd party ReScript grammar to SUPPORTED_LANGUAGES [Paul Tsnobiladzé][]
 - added 3rd party Zig grammar to SUPPORTED_LANGUAGES [Hyou BunKen][]
 - added 3rd party WGSL grammar to SUPPORTED_LANGUAGES [Arman Uguray][]
+- added 3rd party Unison grammar to SUPPORTED_LANGUAGES [Rúnar Bjarnason][]
 
 Developer Tool:
 
@@ -51,6 +58,8 @@ Themes:
 
 - Added `1c-light` theme a like in the IDE 1C:Enterprise 8 (for 1c) [Vitaly Barilko][]
 
+[gnysek]: https://github.com/gnysek
+[Eisenwave]: https://github.com/Eisenwave 
 [Aral Balkan]: https://github.com/aral
 [Lê Duy Quang]: https://github.com/leduyquang753
 [Mohamed Ali]: https://github.com/MohamedAli00949
@@ -59,6 +68,7 @@ Themes:
 [Kristian Ekenes]: https://github.com/ekenes
 [Aneesh Kulkarni]: https://github.com/aneesh98
 [Bruno Meneguele]: https://github.com/bmeneg
+[Tara]: https://github.com/taralei
 [Felix Uhl]: https://github.com/iFreilicht
 [nataliia-radina]: https://github.com/Nataliia-Radina
 [Robloxian Demo]: https://github.com/RobloxianDemo
@@ -71,8 +81,12 @@ Themes:
 [Alvin Joy]: https://github.com/alvinsjoy
 [Lisa Ugray]: https://github.com/lugray
 [TaraLei]: https://github.com/TaraLei
+[Cameron Taylor]: https://github.com/ninjamuffin99
 [Vasily Polovnyov]: https://github.com/vast
 [Arman Uguray]: https://github.com/armansito
+[Rúnar Bjarnason]: https://github.com/runarorama
+[Carl Räfting]: https://github.com/carlrafting
+
 
 
 ## Version 11.9.0
@@ -122,9 +136,9 @@ Core Grammars:
 - fix(swift) `warn_unqualified_access` is an attribute [Bradley Mackey][]
 - enh(swift) macro attributes are highlighted as keywords [Bradley Mackey][]
 - enh(stan) updated for version 2.33 (#3859) [Brian Ward][]
+- enh(llvm) match additional types [wtz][]
 - fix(css) added '_'  css variable detection [Md Saad Akhtar][]
 - enh(groovy) add `record` and `var` as keywords [Guillaume Laforge][]
-
 
 Developer Tool:
 
@@ -146,6 +160,7 @@ Developer Tool:
 [Nicholas Thompson]: https://github.com/NAThompson
 [Yasith Deelaka]: https://github.com/YasithD
 [Brian Ward]: https://github.com/WardBrian
+[wtz]: https://github.com/wangtz0607
 [Md Saad Akhtar]: https://github.com/akhtarmdsaad
 [Guillaume Laforge]: https://github.com/glaforge
 
@@ -191,6 +206,7 @@ Core Grammars:
 [AdamRaichu]: https://github.com/AdamRaichu
 [Ali Ukani]: https://github.com/ali
 [Jeroen van Vianen]: https://github.com/morinel
+[gnysek]: https://github.com/gnysek
 [Rijenkii]: https://github.com/rijenkii
 [faga295]: https://github.com/faga295
 [rvanasa]: https://github.com/rvanasa
